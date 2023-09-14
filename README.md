@@ -1,8 +1,10 @@
 # AIScribe
-AIScribe is an Transcribe and Translate your audio file or using microphone recording.
+
+
+[AIScribe](https://ai-scribe.vercel.app/) is an Transcriber and Translator for your audio file or using microphone recording.
 It uses web workers to run Machine Learning Models in the browser itself.
 
-## Tech Stach used in this app
+## Tech Stack used in this app
 1. React + Vite
 2. tailwindcss for styling
 3. Web workers to run ML models
@@ -17,7 +19,7 @@ It uses web workers to run Machine Learning Models in the browser itself.
 
 ### Some screenshots of the app
 
-![AIScribe](/src/assets/showcase.png)
+[![AIScribe,AIScribe home page](/src/assets/showcase.png)](https://ai-scribe.vercel.app)
 
 ### React + Vite
 

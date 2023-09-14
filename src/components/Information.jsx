@@ -10,7 +10,7 @@ const Information = ({ output }) => {
 
     const worker = useRef(null);
 
-    console.log({toLanguage})
+    console.log({ toLanguage })
     useEffect(() => {
         if (!worker.current) {
             worker.current = new Worker(new URL('../utils/translate.worker.js', import.meta.url), {
@@ -41,7 +41,7 @@ const Information = ({ output }) => {
 
         return () => worker.current.removeEventListener('message', onMessageReceived)
     })
-    
+
 
     function generateTranslation() {
         if (translating || toLanguage === 'Select language') {
@@ -53,7 +53,7 @@ const Information = ({ output }) => {
             text: output.map(val => val.text),
             src_lang: 'eng_Latn',
             tgt_lang: toLanguage
-})
+        })
         worker.current.postMessage({
             text: output.map(val => val.text),
             src_lang: 'eng_Latn',
