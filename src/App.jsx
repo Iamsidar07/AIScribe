@@ -99,8 +99,8 @@ function App() {
         }
       </section>
 
-      <footer className='p-5 '>
-        footer
+      <footer className='grid place-items-center p-5'>
+        Made by @ManojKumar
       </footer>
     </div>
   )

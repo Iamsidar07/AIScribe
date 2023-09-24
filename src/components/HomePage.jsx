@@ -76,7 +76,7 @@ const HomePage = ({ setAudioStream, setFile }) => {
                     {
                         duration !== 0 && <p className="text-sm text-slate-400">{duration}s</p>
                     }
-                    <i className={`fa-solid duration-200 fa-microphone ${audioRecordingStatus && "text-blue-500"}`}></i>
+                    <i className={`fa-solid duration-200 fa-microphone ${audioRecordingStatus ? "text-blue-500" :"text-gray-600"}`}></i>
                 </div>
             </button>
             <p className="text-base">or <label htmlFor="uploadFile" className="cursor-pointer hover:text-blue-500">Upload</label><input className="hidden" type="file" accept=".mp3,.wave" id="uploadFile" onChange={handleUploadFileChange} /> a mp3 file.</p>
